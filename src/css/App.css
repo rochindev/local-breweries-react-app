@@ -1,0 +1,431 @@
+#root {
+  background: whitesmoke;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+
+
+.logo {
+  width: 60px;
+}
+
+.pages {
+  display: flex;
+  padding-left: 0px;
+}
+
+.pages a {
+  margin: 0px 10px;
+}
+
+.pages a.active {
+  background-color: #000000;
+  color: #ffff;
+  border-radius: 30px;
+}
+
+.wrapper {
+  background-image: url('../assets/hero2.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;  
+  box-shadow: 0px -10px 10px -2px rgba(0, 0, 0, 0.4);
+}
+
+
+.hero > h1{
+  text-align: right;
+  padding-top: 200px;
+  padding-right: 200px;
+  font-size: 40px;
+}
+
+.animleft {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.animright {
+  right: 0;
+  height: 100%;
+  top: -5px;
+}
+
+
+@keyframes leaf-sway {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes leaf-sway2 {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.animleft img {
+  position: inherit;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
+  animation: leaf-sway 2.5s ease-in-out infinite;
+  left: -15px;
+
+}
+
+.animleft img:nth-child(2n) {
+  animation: leaf-sway2 2.5s ease-in-out infinite;
+}
+
+.animright img {
+  position: absolute;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
+  animation: leaf-sway 2.5s ease-in-out infinite;
+  right: 0px;
+
+}
+
+.animright img:nth-child(2n) {
+  animation: leaf-sway2 2.5s ease-in-out infinite;
+}
+
+.animleft img.hovered {
+  animation: slideLeft 6s ease-in-out;
+  animation-iteration-count: 1;
+
+}
+
+.animright img.hovered {
+  animation: slideRight 6s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideLeft {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-200px); }
+  30% { transform: translateX(-400px); }
+  70% { transform: translateX(-400px); }
+  80% { transform: translateX(-400px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(200px); }
+  30% { transform: translateX(400px); }
+  70% { transform: translateX(450px); }
+  80% { transform: translateX(450px); }
+  100% { transform: translateX(0); }
+}
+
+/*left section folliage styling*/
+
+.animleft img:nth-child(1) {
+  top: -5%;
+  max-width: 85vh;
+ }
+
+.animleft img:nth-child(2) {
+ top: 15%;
+ max-width: 70vh;
+}
+
+.animleft img:nth-child(3) {
+  top: 75%;
+  max-width: 40vh;
+}
+
+.animleft img:nth-child(4) {
+  top: 50%;
+  max-width: 50vh;
+}
+
+/*right section folliage styling*/
+.animright img:nth-child(2) {
+  top: -5px;
+  max-width: 75vh;
+ }
+
+.animright img:nth-child(1) {
+ top: 8%;
+ max-width: 85vh;
+}
+
+.animright img:nth-child(3) {
+  top: 40%;
+  max-width: 60vh;
+}
+
+.animright img:nth-child(4) {
+  top: 67%;
+  max-width: 85vh;
+}
+
+
+/* /////////////////// Styling the city cards //////////////////////////*/
+
+.cityCardSection {
+  padding-top: 75px;
+  box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  justify-content: center;
+}
+
+.location-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 33px auto;
+  max-width: 58%;
+}
+
+.location-card:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.location-card:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.location-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.location-info {
+  margin-left: 2rem;
+}
+
+.location-name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.location-address {
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+}
+
+.location-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 20px;
+  background-color: #e8e8e8;
+  padding: 0.5rem 1rem;
+}
+
+.tag-container i {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.tag {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.pro {
+  background-color: #7fdbca;
+  color: #11561a;
+}
+
+.con {
+  background-color: #ffea62;
+  color: #746500;
+}
+
+/* /////////////////// Styling the Footer //////////////////////////*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  height: 60px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav li {
+  margin: 0 1rem;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  color: #fff;
+}
+
+.bottom-bar {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/*//////PAGE CONTAINER FOR MAP AND BREWERY CARDS //////////*/
+
+.page-container {
+  display: flex;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+}
+
+.map-container {
+  width: 70%;
+}
+
+.breweries-container {
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/*///////////////////////HERE IS THE MAP /////////////////////*/
+
+#map {
+  width: 100vh;
+  height: 100vh;
+  background-color: gray;
+}
+
+/*/////////////////////////BREWERY CARD CSS ///////////////////////*/
+
+.brewery-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 50px 40px;
+  
+}
+
+.brewery-card:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.brewery-card:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.brewery-image img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.brewery-info {
+  margin-left: 2rem;
+}
+
+.brewery-name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.brewery-address {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.brewery-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 20px;
+  background-color: #e8e8e8;
+  padding: 0.5rem 1rem;
+}
+
+.tag-container i {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.tag-brew {
+  font-size: .9rem;
+  margin: 0;
+}
+
+.pro {
+  background-color: #7fdbca;
+  color: #11561a;
+}
+
+.con {
+  background-color: #ffea62;
+  color: #746500;
+}
