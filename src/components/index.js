@@ -1,15 +1,15 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import CityCard from "./CityCard";
-import tijuanaPic from "../assets/citiesandlocs/tijuana.png"
-import ensenadaPic from "../assets/citiesandlocs/ensenada.png"
-import mexicaliPic from "../assets/citiesandlocs/mexicali.png"
+import tijuanaPic from "/assets/citiesandlocs/tijuana.png"
+import ensenadaPic from "/assets/citiesandlocs/ensenada.png"
+import mexicaliPic from "/assets/citiesandlocs/mexicali.png"
 import Home from "../pages/Home";
 import Tijuana from "../pages/Tijuana";
 import Mexicali from "../pages/Mexicali";
 import Ensenada from "../pages/Ensenada";
 import BreweryCard from "./BreweryCard";
-import pic1 from "../assets/citiesandlocs/93.png"; import artesanalbaja from "../assets/citiesandlocs/artesanalbaja.png"; import bcb from "../assets/citiesandlocs/bcb.png";import bierhalle from "../assets/citiesandlocs/bierhalle.png";import borderpsy from "../assets/citiesandlocs/borderpsycho.png";import casaprado from "../assets/citiesandlocs/casaprado.png";import insurgente2 from "../assets/citiesandlocs/inrgente2.png";import insurgente from "../assets/citiesandlocs/insurgente.png";import ludica from "../assets/citiesandlocs/ludica.png";import madueno from "../assets/citiesandlocs/madueno.png"; import republica from "../assets/citiesandlocs/republica.png"; import teorema from "../assets/citiesandlocs/teorema.png";import zaragoza from "../assets/citiesandlocs/zaragoza.png";import mamut from "../assets/citiesandlocs/mamut.png";
+import pic1 from "/assets/citiesandlocs/93.png"; import artesanalbaja from "/assets/citiesandlocs/artesanalbaja.png"; import bcb from "/assets/citiesandlocs/bcb.png";import bierhalle from "/assets/citiesandlocs/bierhalle.png";import borderpsy from "/assets/citiesandlocs/borderpsycho.png";import casaprado from "/assets/citiesandlocs/casaprado.png";import insurgente2 from "/assets/citiesandlocs/inrgente2.png";import insurgente from "/assets/citiesandlocs/insurgente.png";import ludica from "/assets/citiesandlocs/ludica.png";import madueno from "/assets/citiesandlocs/madueno.png"; import republica from "/assets/citiesandlocs/republica.png"; import teorema from "/assets/citiesandlocs/teorema.png";import zaragoza from "/assets/citiesandlocs/zaragoza.png";import mamut from "/assets/citiesandlocs/mamut.png";
 import "./icons";
 import {goodFood, wideVarietyOfBeers, friendlyStaff, cozyAtmosphere, outdoorSeating, liveMusic, localBeersOnTap, goodLocation, spaciousVenue, goodBeerSelection, dogFriendly, affordablePrices, happyHourSpecials, craftBeerEvents, breweryTours, uniqueBeerFlavors, tastingFlights, beerPairingMenuOptions, knowledgeableStaff, comfortableSeating, cleanEstablishment, largeTVScreensForSports, goodBeerPrices, badFood, limitedBeerSelection, rudeStaff, uninvitingAtmosphere, poorLocation, smallAndCrampedVenue, limitedParking, flagNcheck , pricey } from "./icons";
 
@@ -20,13 +20,13 @@ export const citiesInfo = [
     {
         id: "Tijuana",
         image: tijuanaPic,
-        description: "Your best choice if you're looking for choices",
+        description: "Your best option if you're looking for multiple choices",
         tags: [dogFriendly ,goodFood, friendlyStaff, breweryTours, localBeersOnTap, limitedParking]
     },
     {
         id: "Ensenada",
         image: ensenadaPic,
-        description: "Very far away city but worth it",
+        description: "Very far away city from the border but very much worth it for fancier options",
         tags: [craftBeerEvents ,goodFood, friendlyStaff, breweryTours, liveMusic, pricey]
     },
     {

@@ -8,7 +8,7 @@ export default function Navbar () {
         <div className="nav">
             <div>
                 <NavLink to='/'>
-                    <img alt='logobcb' src='.\src\assets\logo.png' className="logo"/>
+                    <img alt='logobcb' src='/logo.png' className="logo"/>
                 </NavLink>
             </div>
             <div>

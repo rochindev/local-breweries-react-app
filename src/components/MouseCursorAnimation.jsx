@@ -1,5 +1,5 @@
 import {React, useState, useEffect} from 'react';
-import mouse from '../assets/mice.png'
+import mouse from '/assets/mice.png'
 
 const MouseCursorAnimation = () => {
 
