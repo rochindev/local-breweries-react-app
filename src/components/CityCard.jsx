@@ -12,7 +12,7 @@ export default function CityCard () {
         <section className="cityCardSection">
             <div>
                 {cities.map((city) => (
-                  <NavLink to={city.id=="Tijuana"?"/tijuana":city.id=="Ensenada"?"/ensenada":"/mexicali"}>
+                  <NavLink to={city.id=="Tijuana"?"/local-breweries-react-app/tijuana":city.id=="Ensenada"?"/local-breweries-react-app/ensenada":"/local-breweries-react-app/mexicali"}>
                     <div className="location-card">
                         <div className="location-image">
                             <img src={city.image} alt="Location Image" />
