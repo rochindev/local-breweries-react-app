@@ -12,13 +12,14 @@ function App() {
 
       <div className='app'>
 
-        <Routes>
-          <Route path="/local-breweries-react-app/home" element={<><Home /><CityCard /></>} />
+        {/* <Routes>
+          <Route path="/home" element={<><Home /><CityCard /></>} />
           <Route path="/tijuana" element={<Tijuana />} />
           <Route path="/ensenada" element={<Ensenada />} />
           <Route path="/mexicali" element={<Mexicali />} />
-        </Routes>
+        </Routes> */}
         
+        <Home />
         <Footer />
       </div>
     </BrowserRouter>
