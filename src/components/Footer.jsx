@@ -12,8 +12,8 @@ export default function Footer () {
                 </div>
                 <nav className="footer-nav">
                     <ul>
-                        <li><NavLink to='/local-breweries-react-app/home'>
-                            Homme
+                        <li><NavLink to='/local-breweries-react-app/'>
+                            Home
                         </NavLink></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
