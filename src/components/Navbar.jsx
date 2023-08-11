@@ -8,7 +8,7 @@ export default function Navbar () {
         <div className="nav">
             <div>
                 <NavLink to='/local-breweries-react-app'>
-                    <img alt='logobcb' src='/assets/logo.png' className="logo"/>
+                    <img alt='logo-bcb' src='./assets/logo.png' className="logo"/>
                 </NavLink>
             </div>
             <div>
