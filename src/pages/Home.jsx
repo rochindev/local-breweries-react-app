@@ -33,17 +33,17 @@ function Home() {
             <div className='maincontainer'>
 
                 <div className='animleft'>
-                    <img onMouseEnter={handleMouseEnter}  alt='left-folliage-1' src='/assets/izq-pieces/1-de-4-izq.png'/>
-                    <img onMouseEnter={handleMouseEnter}  alt='left-folliage-2' src='/assets/izq-pieces/2-de-4-izq.png'/>
-                    <img onMouseEnter={handleMouseEnter}  alt='left-folliage-3' src='/assets/izq-pieces/3-de-4-izq.png'/>
-                    <img onMouseEnter={handleMouseEnter}  alt='left-folliage-4' src='/assets/izq-pieces/4-de-4-izq.png'/>
+                    <img onMouseEnter={handleMouseEnter}  alt='left-folliage-1' src='./assets/izq-pieces/1-de-4-izq.png'/>
+                    <img onMouseEnter={handleMouseEnter}  alt='left-folliage-2' src='./assets/izq-pieces/2-de-4-izq.png'/>
+                    <img onMouseEnter={handleMouseEnter}  alt='left-folliage-3' src='./assets/izq-pieces/3-de-4-izq.png'/>
+                    <img onMouseEnter={handleMouseEnter}  alt='left-folliage-4' src='./assets/izq-pieces/4-de-4-izq.png'/>
                 </div>
               
                 <div className='animright'>
-                    <img onMouseEnter={handleMouseEnter}  alt='right-folliage-2' src='/assets/dere-pieces/2-de-5-der.png'/> 
-                    <img onMouseEnter={handleMouseEnter}  alt='right-folliage-1' src='/assets/dere-pieces/1-de-5-der.png'/>
-                    <img onMouseEnter={handleMouseEnter}  alt='right-folliage-3' src='/assets/dere-pieces/4-de-5-der.png'/>
-                    <img onMouseEnter={handleMouseEnter}  alt='right-folliage-4' src='/assets/dere-pieces/5-de-5-der.png'/>
+                    <img onMouseEnter={handleMouseEnter}  alt='right-folliage-2' src='./assets/dere-pieces/2-de-5-der.png'/> 
+                    <img onMouseEnter={handleMouseEnter}  alt='right-folliage-1' src='./assets/dere-pieces/1-de-5-der.png'/>
+                    <img onMouseEnter={handleMouseEnter}  alt='right-folliage-3' src='./assets/dere-pieces/4-de-5-der.png'/>
+                    <img onMouseEnter={handleMouseEnter}  alt='right-folliage-4' src='./assets/dere-pieces/5-de-5-der.png'/>
                     
                 </div>
             </div>
