@@ -13,7 +13,7 @@ function App() {
       <div className='app'>
 
         <Routes>
-          <Route path="/local-breweries-react-app/" element={<><Home /><CityCard /></>} />
+          <Route path="/local-breweries-react-app/home" element={<><Home /><CityCard /></>} />
           <Route path="/local-breweries-react-app/tijuana" element={<Tijuana />} />
           <Route path="/local-breweries-react-app/ensenada" element={<Ensenada />} />
           <Route path="/local-breweries-react-app/mexicali" element={<Mexicali />} />
